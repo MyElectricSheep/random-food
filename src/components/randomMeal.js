@@ -126,7 +126,7 @@ export default function RandomMeal(props) {
 						<CardContent>
 							<Typography variant='body2' color='textSecondary' component='p'>
 								{`This impressive ${meal.strMeal} is a perfect party dish and a fun meal to
-						cook together with your guests. `}
+						cook for someone feeling "${props.match.params.id}" `}
 							</Typography>
 						</CardContent>
 						<CardActions disableSpacing>

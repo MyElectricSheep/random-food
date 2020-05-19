@@ -30,7 +30,7 @@ function App() {
 	const handleText = (item) => {
 		history.push("/");
 		setMessage({
-			text: `Hmm, not feeling ${item}? No problemo. How do you actually feel?`,
+			text: `Hmm, not feeling "${item}"? No problemo. How do you actually feel?`,
 		});
 	};
 
