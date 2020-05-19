@@ -6,6 +6,10 @@ import MoodButton from "./mood";
 import RandomMeal from "./randomMeal";
 
 const useStyles = makeStyles({
+	root: {
+		flexGrow: 1,
+	},
+
 	title: {
 		width: "100%",
 		textAlign: "center",
@@ -55,8 +59,13 @@ const useStyles = makeStyles({
 const HomePage = ({ toggleClick, handleMessage }) => {
 	const classes = useStyles();
 	return (
-		<Grid container alignItems='center' direction='column'>
-			<Grid item xs={12} style={{ padding: "50px 250px" }}>
+		<Grid
+			container
+			alignItems='center'
+			direction='column'
+			className={classes.root}
+		>
+			<Grid item xs={12} style={{ padding: "50px" }}>
 				{" "}
 				<Typography className={classes.title}> {handleMessage}</Typography>
 			</Grid>
